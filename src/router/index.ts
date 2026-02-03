@@ -2,12 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 export enum RouterPaths {
   Home = '/',
-  CreateForm = '/create-form',
 }
 
 export enum RouterNames {
   Home = 'Home',
-  CreateForm = 'CreateForm',
 }
 
 const router = createRouter({
@@ -18,11 +16,6 @@ const router = createRouter({
       name: RouterNames.Home,
       component: () => import('@/views/HomeView.vue'),
     },
-    // {
-    //   path: RouterPaths.CreateForm,
-    //   name: RouterNames.CreateForm,
-    //   component: () => import('@/views/CreateForm.vue'),
-    // },
   ],
 })
 
